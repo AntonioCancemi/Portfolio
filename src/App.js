@@ -5,7 +5,8 @@ import HomePage from "./pages/HomePage";
 import Preloader from "./components/Preloader/Preloader";
 import { useEffect } from "react";
 import "./animationPage.css";
-import { Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
+import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   const { loadingPage, updateState } = useMyContext();
   useEffect(() => {
@@ -18,11 +19,18 @@ function App() {
           <Preloader />
         </div>
       ) : (
-        <Container fluid className="puff-in-center">
-          <TopNav />
-          <Routes location={"/home"}>
-            <Route path="/home" element={<HomePage />} />
-          </Routes>
+        <Container fluid>
+          <Col className="puff-in-center">
+            <TopNav />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              {/* <Route path="/about" element={<HomePage />} />
+              <Route path="/experience" element={<HomePage />} />
+              <Route path="/projects" element={<HomePage />} />
+              <Route path="/contact" element={<HomePage />} /> */}
+              <Route path="/*" element={<NotFoundPage />} />
+            </Routes>
+          </Col>
         </Container>
       )}
     </BrowserRouter>

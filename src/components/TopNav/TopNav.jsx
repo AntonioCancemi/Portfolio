@@ -1,5 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import "./TopNav.css";
+import { Link } from "react-router-dom";
 const TopNav = () => {
   return (
     <Row className="px-5 topnav-row justify-content-between  align-content-center ">
@@ -8,24 +9,24 @@ const TopNav = () => {
       </Col>
       <Col xs={10} className="justify-content-end  d-flex shorts-box ">
         <div className="animated-link">
-          <a href="#about">
+          <Link to={"/about"}>
             <span>01.</span>About me<span class="arrow">&#8595;</span>
-          </a>
+          </Link>
         </div>
         <div className="animated-link">
-          <a href="#experience">
+          <Link to={"/experience"}>
             <span>02.</span>Experience<span class="arrow">&#8595;</span>
-          </a>
+          </Link>
         </div>
         <div className="animated-link">
-          <a href="#projects">
+          <Link to={"/projects"}>
             <span>03.</span>Projects<span class="arrow">&#8595;</span>
-          </a>
+          </Link>
         </div>
         <div className="animated-link">
-          <a href="#contact">
+          <Link to={"/contact"}>
             <span>04.</span>Contact<span class="arrow">&#8595;</span>
-          </a>
+          </Link>
         </div>
         <div className="resume-box">
           <button class="resume-button p">RESUME</button>

@@ -12,7 +12,7 @@ export const ContextProvider = ({ children }) => {
     setLoadingPage(true);
     setTimeout(() => {
       setLoadingPage(false);
-    }, 2000);
+    }, 1500);
   };
 
   return (

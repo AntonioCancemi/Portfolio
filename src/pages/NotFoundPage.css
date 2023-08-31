@@ -1,0 +1,37 @@
+.section {
+  padding: 4rem 2rem;
+  color: rgb(204, 214, 246);
+  font-size: larger;
+}
+
+.section .error {
+  font-size: 150px;
+  color: rgb(100, 255, 218);
+  text-shadow: 1px 1px 1px rgb(21, 107, 87), 2px 2px 1px rgb(21, 107, 87),
+    3px 3px 1px rgb(21, 107, 87), 4px 4px 1px rgb(21, 107, 87),
+    5px 5px 1px rgb(21, 107, 87), 6px 6px 1px rgb(21, 107, 87),
+    7px 7px 1px rgb(21, 107, 87), 8px 8px 1px rgb(21, 107, 87),
+    25px 25px 8px rgba(0, 0, 0, 0.432);
+}
+
+.page {
+  margin: 2rem 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.back-home {
+  display: inline-block;
+  color: rgb(204, 214, 246);
+  background-color: transparent;
+  border: 2px solid rgb(100, 255, 218);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1rem 0.6rem;
+  transition: all 0.2s linear;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+.back-home:hover {
+  color: rgb(35, 53, 84);
+  background-color: rgb(100, 255, 218);
+}
