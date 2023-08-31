@@ -3,10 +3,10 @@ import "./TopNav.css";
 const TopNav = () => {
   return (
     <Row className="px-5 topnav-row justify-content-between  align-content-center ">
-      <Col className="text-start nav-title">
+      <Col xs={2} className="text-start nav-title">
         <span className="a">A</span>nto<span className="a">C</span>an.dev
       </Col>
-      <Col className="justify-content-end  d-flex shorts-box ">
+      <Col xs={10} className="justify-content-end  d-flex shorts-box ">
         <div className="animated-link">
           <a href="#about">
             <span>01.</span>About me<span class="arrow">&#8595;</span>
