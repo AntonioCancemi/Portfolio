@@ -1,0 +1,80 @@
+/* box */
+.topnav-row {
+  height: 120px;
+  background-color: rgb(2, 12, 27);
+  color: rgb(168, 178, 209);
+}
+/* a */
+.nav-title {
+  color: rgb(204, 214, 246);
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+}
+.a {
+  font-size: 70px;
+}
+/* links */
+.shorts-box div {
+  padding-top: 30px;
+  font-weight: bolder;
+  font-family: "Roboto Mono", monospace;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.shorts-box span {
+  color: rgb(100, 255, 218);
+  margin-right: 5px;
+}
+.shorts-box a {
+  color: rgb(136, 146, 176);
+  text-decoration: none;
+  padding-right: 10px;
+  transition: color 0.25s;
+}
+.shorts-box a:hover {
+  color: rgb(100, 255, 218);
+}
+/* animetion on links*/
+.animated-link {
+  position: relative;
+  display: inline-block;
+  border: none;
+  overflow: hidden;
+}
+
+.arrow {
+  font-size: 40px;
+  position: absolute;
+  bottom: 2px;
+  left: 16px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.animated-link:hover .arrow {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
+/* button resume */
+.resume-box {
+  height: 30px;
+}
+.resume-button {
+  display: inline-block;
+
+  border: 3px solid rgb(100, 255, 218);
+  border-radius: 10px;
+  background-color: transparent;
+  color: rgb(100, 255, 218);
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.resume-button:hover {
+  transform: translateY(-8px);
+  transform: translateX(-8px);
+  box-shadow: 5px 5px 0px rgb(100, 255, 218);
+}
