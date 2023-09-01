@@ -127,6 +127,7 @@ a {
   transition: 0.5s ease-out;
   transition-property: background-color, color;
 }
+
 #hero .cta:hover {
   color: rgb(35, 53, 84);
   background-color: rgb(100, 255, 218);

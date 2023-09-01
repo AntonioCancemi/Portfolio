@@ -1,0 +1,30 @@
+.section1,
+.section2 {
+  position: relative;
+  padding: 50px 0; /* Aggiungi spazio in alto e in basso per mantenere il contenuto visibile */
+}
+
+.section1::before,
+.section2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(14, 34, 63); /* Colore del separatore */
+  z-index: -1; /* Posiziona il separatore dietro al contenuto */
+  box-shadow: 5px 0px 30px 10px rgb(100, 255, 218);
+  /* border-top: 2px solid rgb(100, 255, 218);
+  border-bottom: 4px solid rgb(100, 255, 218); */
+}
+
+.section1::before {
+  transform: skewY(-3deg); /* Inclina il separatore verso sinistra */
+  transform-origin: bottom right;
+}
+
+.section2::before {
+  transform: skewY(3deg); /* Inclina il separatore verso destra */
+  transform-origin: bottom left;
+}

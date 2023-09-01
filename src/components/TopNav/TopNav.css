@@ -1,7 +1,15 @@
+/* Quando la classe "opaque" è presente, rendi la navbar opaca */
+.topnav-row.opaque {
+  background-color: rgba(2, 12, 27, 0.7);
+}
+.topnav-row:hover {
+  background-color: rgb(2, 12, 27);
+}
 /* box */
 .topnav-row {
   background-color: rgb(2, 12, 27);
   color: rgb(168, 178, 209);
+  transition: background-color 0.5s;
 }
 /* a */
 .nav-title {
@@ -67,13 +75,16 @@
   border-radius: 10px;
   background-color: transparent;
   color: rgb(100, 255, 218);
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .resume-button:hover {
+  box-shadow: 5px 5px 0px rgb(50, 131, 112);
+  color: rgb(0, 0, 0);
+  background-color: rgb(118, 253, 222);
+
   transform: translateY(-8px);
   transform: translateX(-8px);
-  box-shadow: 5px 5px 0px rgb(100, 255, 218);
 }

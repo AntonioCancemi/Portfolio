@@ -13,7 +13,11 @@ const NotFoundPage = () => {
           <div class="page">
             Ooops!!! The page you are looking for is not found
           </div>
-          <Link to={"/"} class="back-home" onClick={() => updateState()}>
+          <Link
+            to={"/"}
+            class="back-home rounded"
+            onClick={() => updateState()}
+          >
             Back to home
           </Link>
         </div>

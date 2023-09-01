@@ -1,10 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: rgb(10, 25, 47);
   font-family: "Helvetica Neue", sans-serif;
 }
-
+:root {
+  width: 100%;
+}
+.container-fluid {
+  padding: 0px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

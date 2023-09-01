@@ -32,6 +32,9 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 .back-home:hover {
+  transform: translateY(-8px);
+  transform: translateX(-8px);
+  box-shadow: 5px 5px 0px rgb(50, 131, 112);
   color: rgb(35, 53, 84);
   background-color: rgb(100, 255, 218);
 }

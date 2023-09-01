@@ -1,0 +1,33 @@
+.bio-box h2 {
+  border-left: 4px solid rgb(100, 255, 218);
+  font-size: 100px;
+  font-family: "Roboto Mono", monospace;
+}
+h2 img {
+  background-color: rgb(204, 214, 246);
+
+  width: 100px;
+  height: 100px;
+}
+.bio-box p {
+  color: rgb(204, 214, 246);
+  padding-left: 10px;
+  border-left: 4px solid rgb(204, 214, 246);
+  font-size: 27px;
+}
+.bio-box p span {
+  font-weight: bold;
+  color: rgb(100, 255, 218);
+}
+.bio-box p a {
+  color: rgb(100, 255, 218);
+  transition: color 0.2s;
+}
+.bio-box p a:hover {
+  color: rgb(93, 115, 158);
+}
+.bio-image {
+  width: 300px;
+  aspect-ratio: 1/1;
+  background-color: rgb(204, 214, 246) !important;
+}

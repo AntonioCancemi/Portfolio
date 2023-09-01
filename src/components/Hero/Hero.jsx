@@ -1,8 +1,12 @@
 import { Button, Col, Row } from "react-bootstrap";
 import "./Hero.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMyContext } from "../../context/ContextProvider";
 const Hero = () => {
   const [linguage, setLinguage] = useState(true);
+  const { updateState } = useMyContext();
+
   const text = [
     "I'm a technology enthusiast who translates passion into code. From Politecnico di Torino to the Fullstack Web Developer journey at EPICODE, I've shaped projects and apps like VigiMod. I'm a proactive problem solver, ready for fresh challenges in the realm of web development. Get in touch To bring your ideas to life.",
     "Sono un'appassionato di tecnologia che trasforma la passione in codice. Dal Politecnico di Torino al percorso di Fullstack Web Developer presso EPICODE, ho plasmato progetti e app come VigiMod. Sono un risolutore proattivo pronto per nuove sfide nel mondo dello sviluppo web. Contattami per dare vita alle tue idee.",
@@ -25,9 +29,9 @@ const Hero = () => {
             <h1>
               Junior Web Developer <span></span>
             </h1>
-            <a href="" type="button" class="cta">
+            <Link to={"/about"} class="cta" onClick={() => updateState(500)}>
               EXPLORE
-            </a>
+            </Link>
           </div>
         </section>
       </Col>
@@ -71,8 +75,10 @@ const Hero = () => {
                 IT
               </button>
             </div>
-            <h2>{linguage ? "Introduction" : "Introduzione"}</h2>
-            <p>{linguage ? text[0] : text[1]}</p>
+            <h2 className="text-focus-in">
+              {linguage ? "Introduction" : "Introduzione"}
+            </h2>
+            <p className="text-focus-in">{linguage ? text[0] : text[1]}</p>
           </div>
         </section>
       </Col>
