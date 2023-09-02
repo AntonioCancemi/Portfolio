@@ -1,7 +1,10 @@
 import { Col, Image, Row } from "react-bootstrap";
 import "./Bio.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useMyContext } from "../../context/ContextProvider";
 const Bio = () => {
+  const { updateState } = useMyContext();
   const [animation, setAnimation] = useState(false);
   const [visibility, setVisibility] = useState(false);
   useEffect(() => {
@@ -25,7 +28,7 @@ const Bio = () => {
     >
       <Col xs={3} className="text-end">
         <Image
-          src="https://cdn3.iconfinder.com/data/icons/books-outline-4/60/Biography-biographical-personal-novel-story-512.png"
+          src="https://img.icons8.com/external-becris-lineal-becris/64/FFFFFF/external-biography-literary-genres-becris-lineal-becris.png"
           rounded
           className={` p-2 bio-image ${
             animation ? "slide-in-blurred-left" : "slide-out-blurred-left"
@@ -89,7 +92,21 @@ const Bio = () => {
           farlo.
         </p>
       </Col>
-      <Col xs={1}></Col>
+      <Col xs={3} className="text-end d-flex align-items-center">
+        <div
+          className={
+            animation ? `slide-in-blurred-right` : `slide-out-blurred-right`
+          }
+        >
+          <Link
+            to={"/experience"}
+            class="cta "
+            onClick={() => updateState(500)}
+          >
+            LOAD NEXT
+          </Link>
+        </div>
+      </Col>
     </Row>
   );
 };

@@ -29,7 +29,11 @@ const Hero = () => {
             <h1>
               Junior Web Developer <span></span>
             </h1>
-            <Link to={"/about"} class="cta" onClick={() => updateState(500)}>
+            <Link
+              to={"/about"}
+              class="cta text-focus-in-slow"
+              onClick={() => updateState(500)}
+            >
               EXPLORE
             </Link>
           </div>
@@ -50,7 +54,6 @@ const Hero = () => {
           <div className="ps-3">
             <div className="button-box ">
               <button
-                c
                 className={linguage && "selected "}
                 onClick={() => setLinguage(true)}
               >

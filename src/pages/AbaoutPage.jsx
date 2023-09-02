@@ -5,16 +5,14 @@ import Bio from "../components/Bio/Bio";
 const AboutPage = () => {
   return (
     <>
-      <div className="section1">
+      <div className="section1 text-focus-in">
         <TopAboutMe />
       </div>
       <br />
       <br />
       <br />
-      <div className="section2">
+      <div className="section2 text-focus-in">
         <Bio />
-
-        <Row></Row>
       </div>
     </>
   );

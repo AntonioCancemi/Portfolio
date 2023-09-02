@@ -1,7 +1,6 @@
 .section {
   padding: 4rem 2rem;
   color: rgb(204, 214, 246);
-  font-size: larger;
 }
 
 .section .error {
@@ -16,11 +15,12 @@
 
 .page {
   margin: 2rem 0;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .back-home {
+  font-size: 30px;
   display: inline-block;
   color: rgb(204, 214, 246);
   background-color: transparent;

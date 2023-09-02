@@ -19,7 +19,7 @@
   color: rgb(204, 214, 246);
 }
 .introduction-container p {
-  height: 240px;
+  height: fit-content;
   color: rgb(168, 178, 209);
 }
 .button-box button {

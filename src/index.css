@@ -2,7 +2,8 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
   background-color: rgb(10, 25, 47);
   font-family: "Helvetica Neue", sans-serif;
 }

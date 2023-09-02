@@ -6,7 +6,8 @@ const TopAboutMe = () => {
     <Row className="justify-content-center text-light top-about-container pt-5 align-content-center">
       <Col xs={3} className="text-center text-box text-focus-in ">
         <h3>
-          Sviluppatore <br /> Web Full-Stack
+          Full-Stack <br />
+          Web Developer
         </h3>
         <ul>
           <li>Applicazioni Web All'avanguardia</li>
@@ -17,7 +18,7 @@ const TopAboutMe = () => {
         </ul>
       </Col>
       <Col xs={3} className="text-center text-box text-focus-in">
-        <h3>Risolutore Nato</h3>
+        <h3>Problem Solver</h3>
         <ul>
           <li>
             <strong>Analisi Critica</strong> per Soluzioni Personalizzate

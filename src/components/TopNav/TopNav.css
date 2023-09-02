@@ -10,6 +10,7 @@
   background-color: rgb(2, 12, 27);
   color: rgb(168, 178, 209);
   transition: background-color 0.5s;
+  box-shadow: 0px 35px 42px 20px rgba(0, 0, 0, 0.2);
 }
 /* a */
 .nav-title {
@@ -40,6 +41,16 @@
 }
 .shorts-box a:hover {
   color: rgb(100, 255, 218);
+}
+/* una volta selezionata la pagina */
+.current-page a {
+  color: rgb(100, 255, 218);
+}
+.current-page .arrow {
+  color: transparent;
+}
+.current-page > a > span {
+  color: rgb(136, 146, 176);
 }
 /* animetion on links*/
 .animated-link {
