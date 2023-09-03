@@ -38,8 +38,6 @@ const TopAboutMe = () => {
         </ul>
       </Col>
       <Col xs={12} className="text-center">
-        <div className="scroll-down">scroll</div>
-        <div className="scroll-down">down</div>
         <div className="scroll-down-arrow">⮟</div>
       </Col>
     </Row>

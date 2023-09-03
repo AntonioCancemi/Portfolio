@@ -1,5 +1,26 @@
 .experience-page-conatiner {
-  margin: 10% 10% 10% 10%;
+  margin: 5% 10% 0% 10%;
+}
+.experience-page-conatiner .cta {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  padding: 10px 30px;
+  color: rgb(204, 214, 246);
+  border: 2px solid rgb(100, 255, 218);
+  background-color: transparent;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s ease-out;
+  transition-property: box-shadow, background-color, color;
+  box-shadow: 0px 0px 20px 1px rgb(100, 255, 218);
+}
+
+.experience-page-conatiner .cta:hover {
+  color: rgb(35, 53, 84);
+  background-color: rgb(100, 255, 218);
+  box-shadow: 0px 0px 20px 1px rgb(35, 53, 84);
 }
 .experience-contatiner p {
   text-transform: capitalize;
@@ -29,51 +50,61 @@
 }
 /* formazione */
 .experience-row h2 {
+  width: fit-content;
+  border-radius: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   color: rgb(207, 219, 255);
+  box-shadow: -15px 0px 0px 0px rgb(50, 131, 112),
+    15px 0px 0px 0px rgb(50, 131, 112);
   border-left: 4px solid rgb(100, 255, 218);
+  border-right: 4px solid rgb(100, 255, 218);
   font-size: 5rem;
   font-family: "Roboto Mono", monospace;
 }
 .experience-row h3 {
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: rgb(100, 255, 218);
-  padding-left: 10px;
+  padding: 10px;
+  box-shadow: -15px -15px 0px 0px rgb(50, 131, 112);
+  border-radius: 10px;
+  border-top: 4px solid rgb(100, 255, 218);
   border-left: 4px solid rgb(100, 255, 218);
 }
 .experience-row h4 {
+  box-shadow: -5px -5px 0px 0px rgb(50, 131, 112);
+  width: fit-content;
+  border-radius: 10px;
   margin-top: 20px;
   font-size: 2rem;
   color: rgb(100, 255, 218);
-  padding-left: 10px;
+  padding: 10px;
   border-left: 4px solid rgb(100, 255, 218);
+  border-top: 4px solid rgb(100, 255, 218);
   font-weight: bolder;
 }
+
 .experience-row p {
+  border-radius: 10px;
   font-size: 1.5em;
   color: rgb(207, 219, 255);
   padding-left: 10px;
   border-left: 4px solid rgb(204, 214, 246);
 }
 .experience-row li {
+  box-shadow: -5px 5px 0px 0px rgb(35, 53, 84);
   color: rgb(238, 242, 255);
   font-size: 1.5rem;
   margin-top: 15px;
   padding: 10px;
   list-style: none;
-  border-bottom: 2px solid rgb(73, 86, 112);
-  border-left: 2px solid rgb(73, 86, 112);
+  border-bottom: 5px solid rgb(73, 86, 112);
+  border-left: 5px solid rgb(73, 86, 112);
   border-radius: 10px;
 }
 .experience-row li span {
   font-size: 1.7rem;
   color: rgb(100, 255, 218);
   font-weight: bold;
-}
-#epicodeLogo {
-  width: 50%;
-  background-color: rgb(168, 178, 209);
-  padding: 10px;
-  border-radius: 30px;
 }

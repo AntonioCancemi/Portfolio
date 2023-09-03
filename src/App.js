@@ -7,8 +7,9 @@ import { useEffect } from "react";
 import "./animationPage.css";
 import { Col, Container } from "react-bootstrap";
 import NotFoundPage from "./pages/NotFoundPage";
-import AboutPage from "./pages/AbaoutPage";
 import ExperiencePage from "./pages/ExperiencePage";
+import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
 function App() {
   const { loadingPage, updateState } = useMyContext();
   useEffect(() => {
@@ -28,8 +29,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/experience" element={<ExperiencePage />} />
-              {/* <Route path="/projects" element={<HomePage />} />
-              <Route path="/contact" element={<HomePage />} /> */}
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/contact" element={<HomePage />} />
               <Route path="/*" element={<NotFoundPage />} />
             </Routes>
           </Col>

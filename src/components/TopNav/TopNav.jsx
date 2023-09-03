@@ -3,6 +3,7 @@ import "./TopNav.css";
 import { Link, useLocation } from "react-router-dom";
 import { useMyContext } from "../../context/ContextProvider";
 import { useEffect, useState } from "react";
+import { BsDownload } from "react-icons/bs";
 const TopNav = () => {
   const location = useLocation();
   const { updateState, curriculm } = useMyContext();
@@ -64,7 +65,7 @@ const TopNav = () => {
           }`}
         >
           <Link to={"/experience"} onClick={() => checkPath("/experience")}>
-            <span>02.</span>Experience<span class="arrow">&#8595;</span>
+            <span>02.</span>Training<span class="arrow">&#8595;</span>
           </Link>
         </div>
         <div
@@ -90,6 +91,7 @@ const TopNav = () => {
             class="resume-button p"
             onClick={() => handleDownloadResume()}
           >
+            <BsDownload className="me-1 mb-2" />
             RESUME
           </button>
         </div>

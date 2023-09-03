@@ -1,0 +1,7 @@
+.slider-content img {
+  display: block;
+  height: 400px;
+}
+.slider-content {
+  width: max-content;
+}

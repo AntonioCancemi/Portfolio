@@ -29,13 +29,16 @@ const Hero = () => {
             <h1>
               Junior Web Developer <span></span>
             </h1>
-            <Link
-              to={"/about"}
-              class="cta text-focus-in-slow"
-              onClick={() => updateState(500)}
-            >
-              EXPLORE
-            </Link>
+            <div className="d-flex explore text-focus-in-slow align-items-center">
+              <Link
+                to={"/about"}
+                className="cta "
+                onClick={() => updateState(500)}
+              >
+                EXPLORE
+              </Link>
+              <p className=" text-center">My Portfolio</p>
+            </div>
           </div>
         </section>
       </Col>

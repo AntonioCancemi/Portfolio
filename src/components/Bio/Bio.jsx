@@ -100,7 +100,7 @@ const Bio = () => {
         >
           <Link
             to={"/experience"}
-            class="cta "
+            class="cta-bio "
             onClick={() => updateState(500)}
           >
             LOAD NEXT
