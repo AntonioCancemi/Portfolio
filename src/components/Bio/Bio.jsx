@@ -52,13 +52,13 @@ const Bio = () => {
           Sono Antonio Francesco Cancemi, un appassionato Sviluppatore Web
           Full-Stack con una solida formazione tecnico scientifica maturata
           durante il cammino da un liceo Scientifico fino al
-          <a href="https://www.polito.it/" target="_blank">
+          <a href="https://www.polito.it/" rel="noreferrer" target="_blank">
             {" "}
             Politecnico di Torino
           </a>
           . Il mio percorso professionale è stato plasmato da sei mesi di
           immersiva formazione presso
-          <a href="https://epicode.com/it/" target="_blank">
+          <a href="https://epicode.com/it/" rel="noreferrer" target="_blank">
             {" "}
             EPICODE
           </a>

@@ -12,7 +12,7 @@ const TopNav = () => {
     window.open(curriculm, "_blank");
   };
   const checkPath = (path) => {
-    if (path != location.pathname) {
+    if (path !== location.pathname) {
       updateState(500);
     }
   };
@@ -40,10 +40,10 @@ const TopNav = () => {
         <span className="a">A</span>
         <span className="a">C</span>.dev
       </Col>
-      <Col xs={10} className="justify-content-end  d-flex shorts-box ">
+      <Col className="justify-content-end d-xxs-none d-xs-none d-md-none d-lg-flex shorts-box ">
         <div
           className={`animated-link ${
-            location.pathname == "/" ? "current-page" : ""
+            location.pathname === "/" ? "current-page" : ""
           }`}
         >
           <Link to={"/"} onClick={() => checkPath("/")}>

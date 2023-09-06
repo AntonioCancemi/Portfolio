@@ -10,6 +10,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
 function App() {
   const { loadingPage, updateState } = useMyContext();
   useEffect(() => {
@@ -30,7 +31,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/experience" element={<ExperiencePage />} />
               <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/contact" element={<HomePage />} />
+              <Route path="/contact" element={<ContactPage />} />
               <Route path="/*" element={<NotFoundPage />} />
             </Routes>
           </Col>

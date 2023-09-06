@@ -1,4 +1,4 @@
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import "./Hero.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -12,8 +12,8 @@ const Hero = () => {
     "Sono un'appassionato di tecnologia che trasforma la passione in codice. Dal Politecnico di Torino al percorso di Fullstack Web Developer presso EPICODE, ho plasmato progetti e app come VigiMod. Sono un risolutore proattivo pronto per nuove sfide nel mondo dello sviluppo web. Contattami per dare vita alle tue idee.",
   ];
   return (
-    <Row className="hero-row mx-5">
-      <Col xs={2} className="d-xs-none"></Col>
+    <Row className="hero-row mx-5 px-5">
+      <Col lg={2} className="d-xs-none"></Col>
       <Col>
         <section id="hero" className="box-content-align">
           <div class="hero container d-flex flex-column align-content-center ">
@@ -69,7 +69,7 @@ const Hero = () => {
                 EN
               </button>
               <button
-                className={linguage || "selected"}
+                className={!linguage && "selected"}
                 onClick={() => setLinguage(false)}
               >
                 <img
@@ -88,7 +88,7 @@ const Hero = () => {
           </div>
         </section>
       </Col>
-      <Col xs={2} className="d-xs-none"></Col>
+      <Col lg={2} className="d-xs-none"></Col>
     </Row>
   );
 };
