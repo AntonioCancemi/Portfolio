@@ -51,7 +51,7 @@ const ContactPage = () => {
                 rel="noreferrer"
               >
                 <SiGmail className="align-self-center icon" />
-                Email : anotniocancemi1@gmail.com
+                Email : antoniocancemi1@gmail.com
               </a>
             </li>
           </ul>

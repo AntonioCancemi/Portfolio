@@ -7,7 +7,7 @@ export const useMyContext = () => useContext(Context);
 export const ContextProvider = ({ children }) => {
   //curriculm link
   const curriculm =
-    "https://drive.google.com/file/d/1U7XMpJu59EQvGyCjlSrsNYW-gwGBqAsB/view?usp=sharing";
+    "https://drive.google.com/file/d/1ruvxXKbkhQYpnLYiv6o7oc2qlR07hCWI/view?usp=drive_link";
   // for pre loading page
   const [loadingPage, setLoadingPage] = useState(true);
   // used for every page switch

@@ -1,16 +1,30 @@
 /* Quando la classe "opaque" è presente, rendi la navbar opaca */
+.nav-btn {
+  color: rgb(100, 255, 218) !important;
+  border-color: rgb(100, 255, 218);
+  font-size: bold;
+}
+.offcanvas-bg {
+  background-color: rgb(2, 12, 27) !important;
+}
+.offcanvas-body {
+  overflow-y: visible !important;
+}
+.offcanvas-header {
+  color: rgb(100, 255, 218) !important;
+}
 .topnav-row.opaque {
-  background-color: rgba(2, 12, 27, 0.7);
+  background-color: rgba(2, 12, 27, 0.7) !important ;
 }
 .topnav-row:hover {
-  background-color: rgb(2, 12, 27);
+  background-color: rgb(2, 12, 27) !important;
 }
 /* box */
 .topnav-row {
-  background-color: rgb(2, 12, 27);
-  color: rgb(168, 178, 209);
-  transition: background-color 0.5s;
-  box-shadow: 0px 35px 42px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgb(2, 12, 27) !important;
+  color: rgb(168, 178, 209) !important;
+  transition: background-color 0.5s !important;
+  box-shadow: 0px 35px 42px 20px rgba(0, 0, 0, 0.2) !important;
 }
 /* a */
 .nav-title {
@@ -22,12 +36,18 @@
   font-size: 70px;
 }
 /* links */
-.shorts-box div {
-  padding-top: 30px;
+
+.shorts-box li {
   font-weight: bolder;
   font-family: "Roboto Mono", monospace;
-  margin-right: 20px;
-  font-size: 25px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+}
+@media screen and (max-with: 1400px) {
+  .shorts-box > ul li {
+    font-size: 0.1rem;
+  }
 }
 .shorts-box span {
   color: rgb(100, 255, 218);
@@ -47,6 +67,7 @@
   color: rgb(100, 255, 218);
 }
 .current-page .arrow {
+  z-index: 3;
   color: transparent;
 }
 .current-page > a > span {
@@ -54,16 +75,14 @@
 }
 /* animetion on links*/
 .animated-link {
+  z-index: 1;
   position: relative;
-  display: inline-block;
-  border: none;
-  overflow: hidden;
 }
 
 .arrow {
   font-size: 40px;
   position: absolute;
-  bottom: 2px;
+  bottom: -32px;
   left: 16px;
   transform: translateX(-50%);
   opacity: 0;
@@ -86,7 +105,7 @@
   border-radius: 10px;
   background-color: transparent;
   color: rgb(100, 255, 218);
-  font-size: 25px;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s;
 }
@@ -98,4 +117,10 @@
 
   transform: translateY(-8px);
   transform: translateX(-8px);
+}
+
+@media screen and (max-with: 1360px) {
+  .resume-box {
+    padding-top: 20px;
+  }
 }

@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import Preloader from "./components/Preloader/Preloader";
 import { useEffect } from "react";
 import "./animationPage.css";
-import { Col, Container } from "react-bootstrap";
+import { Col, Container, Navbar } from "react-bootstrap";
 import NotFoundPage from "./pages/NotFoundPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import AboutPage from "./pages/AboutPage";
