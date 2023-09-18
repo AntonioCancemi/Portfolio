@@ -26,11 +26,11 @@ const TopNav = () => {
   }, []);
   return (
     <Row
-      className={`px-2 topnav-row justify-content-between  align-content-center fixed-top ${
+      className={` px-2 topnav-row justify-content-between  align-content-center fixed-top ${
         isNavbarOpaque ? "opaque" : ""
       }`}
     >
-      <Col className="col-sm-10 col-md-10 col-lg-2 text-center nav-title ">
+      <Col className="ms-2   col-lg-2 text-start nav-title ">
         <span className="a">A</span>
         <span className="a">C</span>.dev
       </Col>
@@ -67,8 +67,7 @@ const ResponsiveOffcanvas = () => {
         </Button>
 
         <Offcanvas placement="top" show={show} responsive="lg">
-          <Offcanvas.Header className="offcanvas-bg">
-            <Offcanvas.Title>Navigation</Offcanvas.Title>
+          <Offcanvas.Header className="offcanvas-bg d-flex justify-content-center d-lg-none ">
             <Button
               variant="trasparent"
               className="nav-btn"
@@ -132,7 +131,7 @@ const ResponsiveOffcanvas = () => {
                   <span className="arrow d-md-none d-lg-block">&#8595;</span>
                 </Link>
               </li>
-              <li className="resume-box ">
+              <li className="resume-box  ">
                 <button
                   className="resume-button"
                   onClick={() => handleDownloadResume()}

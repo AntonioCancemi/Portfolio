@@ -9,7 +9,10 @@ const Bio = () => {
   const [visibility, setVisibility] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
+      // Regola il valore a cui attivare l'animazione in base alla larghezza della finestra
+      const scrollThreshold = window.innerWidth > 768 ? 1500 : 1650;
+
+      if (window.scrollY > scrollThreshold) {
         setAnimation(true);
         setTimeout(setVisibility(true), 100);
       } else {
@@ -26,7 +29,7 @@ const Bio = () => {
     <Row
       className={`justify-content-center pt-5  ${visibility || "invisible"}`}
     >
-      <Col xs={3} className="text-end">
+      <Col className="d-none d-md-block col-1 text-end ">
         <Image
           src="https://img.icons8.com/external-becris-lineal-becris/64/FFFFFF/external-biography-literary-genres-becris-lineal-becris.png"
           rounded
@@ -35,9 +38,9 @@ const Bio = () => {
           }`}
         />
       </Col>
-      <Col xs={5} className="bio-box text-start text-light m-0">
+      <Col className="col-10 col-lg-7 bio-box text-start text-light m-0">
         <h2
-          className={`d-flex align-items-center ${
+          className={`text-start ps-2 ${
             animation ? `slide-in-blurred-right` : `slide-out-blurred-right`
           }`}
         >
@@ -88,11 +91,10 @@ const Bio = () => {
           }
         >
           Sono entusiasta di condividere il mio lavoro e le mie competenze
-          attraverso questo portfolio digitale. Grazie per l'opportunità di
-          farlo.
+          attraverso questo portfolio digitale. Grazie!
         </p>
       </Col>
-      <Col xs={3} className="text-end d-flex align-items-center">
+      <Col className="col-cta-bio col-10 col-lg-1  d-block d-lg-flex align-items-center text-center">
         <div
           className={
             animation ? `slide-in-blurred-right` : `slide-out-blurred-right`

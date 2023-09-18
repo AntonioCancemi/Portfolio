@@ -8,16 +8,35 @@
   border-color: rgb(73, 86, 112) !important;
   border-width: 6px !important;
   border: outset;
+  width: 270px;
   aspect-ratio: 1/1 !important;
 }
+@media screen and (max-width: 584px) {
+  .profile-img {
+    width: 150px;
+  }
+}
+
 .introduction-container {
-  font-size: 25px;
+  margin-top: 35px;
+  font-size: 1.5rem;
   border-color: rgb(73, 86, 112) !important;
   border-width: 3px !important;
+}
+@media screen and (max-width: 584px) {
+  .introduction-container {
+    margin-top: -25px;
+    font-size: 1.1rem;
+  }
 }
 .introduction-container h2 {
   font-size: 60px;
   color: rgb(204, 214, 246);
+}
+@media screen and (max-width: 584px) {
+  .introduction-container h2 {
+    font-size: 2em;
+  }
 }
 .introduction-container p {
   height: fit-content;
@@ -29,6 +48,17 @@
   color: rgb(204, 214, 246);
   margin-right: 3px;
   border-radius: 10px;
+}
+.button-box img {
+  width: 30px;
+}
+@media screen and (max-width: 584px) {
+  .button-box button {
+    font-size: 15px;
+  }
+  .button-box img {
+    width: 20px;
+  }
 }
 .selected {
   background-color: rgb(204, 214, 246) !important;
@@ -54,7 +84,6 @@ a {
 }
 
 /* Hero Section */
-
 #hero::after {
   content: "";
   position: absolute;

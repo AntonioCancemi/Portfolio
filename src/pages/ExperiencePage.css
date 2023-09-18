@@ -1,6 +1,7 @@
 .experience-page-conatiner {
-  margin: 5% 10% 0% 10%;
+  margin: 0% 10% 0% 10%;
 }
+/* bottone in fondo */
 .experience-page-conatiner .cta {
   width: fit-content;
   height: fit-content;
@@ -29,11 +30,9 @@
   padding-left: 10px;
   padding-top: 10px;
   margin-top: 10px;
-  margin-right: 30%;
   border-left: 4px solid rgb(204, 214, 246);
 }
 .experience-contatiner h3 {
-  cursor: pointer;
   background-color: rgb(35, 53, 84);
   padding: 0px 10px 0px 10px;
   border-left: 4px solid rgb(100, 255, 218);
@@ -42,14 +41,38 @@
   font-family: "Roboto Mono", monospace;
 }
 
-.experience-contatiner img {
-  height: 200px;
+.icon {
+  width: 80px;
+  margin: 10px;
+  padding: 5px;
+  aspect-ratio: 1/1;
+  background-color: rgba(200, 218, 248, 0.719);
+  box-shadow: -10px 10px 0px 0px rgb(35, 53, 84);
+}
+.icon:first-child {
+}
+@media screen and (max-width: 584px) {
+  .experience-page-conatiner {
+    margin: 5% 2% 0% 2%;
+  }
+  .experience-contatiner h3 {
+    font-size: 2rem;
+  }
+  .experience-contatiner p {
+    font-size: 0.9rem;
+  }
+  .icon {
+    width: 50px;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: -5px 5px 0px 0px rgb(35, 53, 84);
+  }
 }
 .swing-in-top-fwd {
   width: 100%;
 }
 /* formazione */
-.experience-row h2 {
+.experience-row .h2 {
   width: fit-content;
   border-radius: 10px;
   padding-left: 10px;
@@ -59,12 +82,11 @@
     15px 0px 0px 0px rgb(50, 131, 112);
   border-left: 4px solid rgb(100, 255, 218);
   border-right: 4px solid rgb(100, 255, 218);
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: "Roboto Mono", monospace;
 }
 .experience-row h3 {
-  margin-top: 20px;
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: rgb(100, 255, 218);
   padding: 10px;
   box-shadow: -15px -15px 0px 0px rgb(50, 131, 112);
@@ -77,7 +99,7 @@
   width: fit-content;
   border-radius: 10px;
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: rgb(100, 255, 218);
   padding: 10px;
   border-left: 4px solid rgb(100, 255, 218);
@@ -87,7 +109,7 @@
 
 .experience-row p {
   border-radius: 10px;
-  font-size: 1.5em;
+  font-size: 0.9em;
   color: rgb(207, 219, 255);
   padding-left: 10px;
   border-left: 4px solid rgb(204, 214, 246);
@@ -95,7 +117,7 @@
 .experience-row li {
   box-shadow: -5px 5px 0px 0px rgb(35, 53, 84);
   color: rgb(238, 242, 255);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 15px;
   padding: 10px;
   list-style: none;
@@ -104,7 +126,38 @@
   border-radius: 10px;
 }
 .experience-row li span {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: rgb(100, 255, 218);
   font-weight: bold;
+}
+@media screen and (max-width: 584px) {
+  .experience-row .h2 {
+    box-shadow: -10px 0px 0px 0px rgb(50, 131, 112),
+      10px 0px 0px 0px rgb(50, 131, 112);
+    font-size: 2.5rem;
+    font-family: "Roboto Mono", monospace;
+  }
+  .experience-row h3 {
+    font-size: 1.4rem;
+    padding: 10px;
+    box-shadow: -10px -10px 0px 0px rgb(50, 131, 112);
+  }
+  .experience-row h4 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: rgb(100, 255, 218);
+    padding: 10px;
+  }
+  .experience-row li {
+    font-size: 1rem;
+    margin-top: 15px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 5px solid rgb(73, 86, 112);
+    border-left: 5px solid rgb(73, 86, 112);
+    border-radius: 10px;
+  }
+  .experience-page-conatiner .cta {
+    font-size: 1.2rem;
+  }
 }
